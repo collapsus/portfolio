@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru" xml:lang="ru">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Collapsus portfolio</title>
+        <script type="text/javascript" src="jquery.lint.js"></script>
+        <link rel="stylesheet" href="portfolio.css" type="text/css" media="screen" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+        <script type="text/javascript" src="project.js"></script>
+        <script type="text/javascript" src="projectcollection.js"></script>
+        <script type="text/javascript">
+            var projectsData = {
+                'project1': {
+                    title: 'CoupleLog',
+                    about: 'Лог для двоих. Небольшой сервис который помогает избегая конфликта "свести счёты".',
+                    exampleUrl: '#',
+                    sourceUrl: '#',
+                    widgetUrl: '#'
+                },
+                'project2': {
+                    title: 'AlcoLog',
+                    about: 'АлкоЛог. Для тех, кому интересно какое колличество алкоголя они потребляют.',
+                    exampleUrl: '#',
+                    sourceUrl: '#',
+                    widgetUrl: '#'
+                },
+                'project3': {
+                    title: 'RunPlaces',
+                    about: 'Места для бега. Яндекс.Карта на которой отмечены некоторые места удобные для пробежек.',
+                    exampleUrl: '#',
+                    sourceUrl: '#',
+                    widgetUrl: '#'
+                },
+                'project4': {
+                    title: 'MyWays',
+                    about: 'Мои дороги. Яндекс.Карта на которой можно посмотреть некоторые из моих путей.',
+                    exampleUrl: '#',
+                    sourceUrl: '#',
+                    widgetUrl: '#'
+                }
+            },
+            projects = {};
+
+            $(function(){
+                var projectCollection = new ProjectCollection(projectsData);
+            });
+
+        </script>
+    </head>
+<body>
+    <h1>Collapsus portfolio</h1>
+</body>
+</html>
