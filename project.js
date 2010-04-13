@@ -20,7 +20,7 @@ Project.prototype.makeHTML = function(){
                     '<a href="', this.data.sourceUrl, '">Посмотреть исходный код</a>',
                 '</div>',
                 '<div class="widget-url">',
-                    '<a href="', this.data.widgetUrl, '">Установить Яндекс виджет</a>',
+                    this.data.widgetUrl != '#' ? ['<a href="', this.data.widgetUrl, '">Установить Яндекс виджет</a>'] : '',
                 '</div>',
             '</div>',
         '</div>'
