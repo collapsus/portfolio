@@ -8,22 +8,25 @@ function Project(projectCollection, data){
 Project.prototype.makeHTML = function(){
     return [
         '<div class="project">',
-            '<h2 class="title"><span>', this.data.title,'</span></h2>',
-            '<div class="slide"',
-                '<div class="about">',
-                    this.data.about,
-                '</div>',
-                '<div class="example-url">',
-                    '<a href="', this.data.exampleUrl, '">Перейти к примеру</a>',
-                '</div>',
-                '<div class="source-url">',
-                    '<a href="', this.data.sourceUrl, '">Посмотреть исходный код</a>',
-                '</div>',
-                '<div class="widget-url">',
-                    this.data.widgetUrl != '#' ? ['<a href="', this.data.widgetUrl, '">Установить Яндекс виджет</a>'].join('') : '',
+            '<div>',
+                '<h2 class="title"><span>', this.data.title,'</span></h2>',
+                '<div class="slide"',
+                    '<div class="about">',
+                        this.data.about,
+                    '</div>',
+                    '<div class="example-url">',
+                        '<a href="', this.data.exampleUrl, '">Перейти к примеру</a>',
+                    '</div>',
+                    '<div class="source-url">',
+                        '<a href="', this.data.sourceUrl, '">Посмотреть исходный код</a>',
+                    '</div>',
+                    '<div class="widget-url">',
+                        this.data.widgetUrl != '#' ?
+                                ['<a href="', this.data.widgetUrl, '">Установить Яндекс виджет</a>'].join('') : '',
+                    '</div>',
                 '</div>',
             '</div>',
-        '</div>'
+        '</div>',
     ].join('');
 };
 
@@ -40,9 +43,9 @@ Project.prototype.makeDOM = function(){
     }, function(k, v){
         _this[k] = _this.elem.find(v);
     });
-
+/*
     this.title.click(function(){
         _this.projectCollection.makeCurrent(this);
     });
-
+*/
 };

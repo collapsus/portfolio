@@ -1,3 +1,11 @@
+body
+{
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    width: 30em;
+}
+
 h1
 {
     text-align: center;
@@ -11,8 +19,11 @@ h2
 
 .slide
 {
-    display: none;
-    text-align: center;
+/*    display: none; */
+}
+
+.project
+{
 }
 
 .project .title span
@@ -20,12 +31,11 @@ h2
     border-bottom: dotted 1px;
 }
 
-.project .title:hover
+.project :hover
 {
     background-color: #e3e2e2;
-    cursor: pointer;
 }
-
+/*
 .project .title .active
 {
     background-color: #e3e2e2;
@@ -34,4 +44,10 @@ h2
 .project .title .active span, .project .title:hover span
 {
     border-bottom: none;
+}
+*/
+
+.source-url
+{
+    font-family: monospace;
 }

@@ -10,7 +10,7 @@ ProjectCollection.prototype.makeDOM = function(){
         _this.projects[k] = new Project(_this, v);
     });
 };
-
+/*
 ProjectCollection.prototype.makeCurrent = function(title){
     var _this = this;
     $.each(_this.projectsData, function(k, v){
@@ -23,3 +23,4 @@ ProjectCollection.prototype.makeCurrent = function(title){
         }
     });
 };
+*/
