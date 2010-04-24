@@ -1,8 +1,8 @@
 body
 {
-    margin: 0 auto;
+    margin: 0 auto 25px;
     position: relative;
-    width: 20em;
+    width: 30em;
 }
 
 h1
@@ -14,7 +14,7 @@ h2
     margin: 20px 0 0 0;
 }
 
-.output a:hover
+a:hover, .source-url a:hover
 {
     color: #EE0000;
 }
@@ -24,7 +24,7 @@ h2
 /*    display: none; */
 }
 
-.output, .output a
+.source-url a
 {
     color: rgb(6, 105, 6);
 }
