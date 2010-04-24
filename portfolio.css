@@ -2,19 +2,21 @@ body
 {
     margin: 0 auto;
     position: relative;
-    text-align: center;
     width: 20em;
 }
 
 h1
 {
-    text-align: center;
 }
 
 h2
 {
-    text-align: center;
-    margin: 5px 0 5px 0;
+    margin: 20px 0 0 0;
+}
+
+a:hover
+{
+    color: #EE0000;
 }
 
 .slide
@@ -28,13 +30,8 @@ h2
 
 .project .title span
 {
-    border-bottom: dotted 1px;
 }
 
-.project :hover
-{
-    background-color: #e3e2e2;
-}
 /*
 .project .title .active
 {
